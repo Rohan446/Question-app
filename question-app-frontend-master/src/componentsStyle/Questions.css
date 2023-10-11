@@ -1,0 +1,154 @@
+
+.navBar{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    margin-top: -20px;
+    background: #af97d4;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.mainContainer{
+    text-align: center;
+    height: 800px;
+    width: 100%;
+    background-color: white;
+}
+
+.questionsHolder, .settingsContainer{
+    margin-left: 50px;
+    overflow: scroll;
+    margin-top: 20px;
+}
+
+.syncIcon{
+    float: right;
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(116, 67, 116);
+    cursor: pointer;
+}
+
+.ansWerButton{
+    z-index: 1;
+    border: none;
+    background-color: rgb(141, 109, 141);
+    color: white;
+    height: 30px;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sideBar{
+    position: fixed;
+    height: 800px;
+    text-align: center;
+    width: 80px;
+    background-color: wheat;
+    z-index: 1;
+}
+
+.iconDisplay{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.iconDisplay :hover{
+        color: rgb(147, 72, 197);
+}
+
+.questionsContainer{
+    text-align: left;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #222222;
+    height: 180px;
+    width: 90%;
+    background-color: thistle;
+    display: inline-block;
+}
+
+.sideBarSelector{
+    display: none;
+}
+
+.question{
+    margin-left: 12px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(88, 83, 83);
+}
+
+.choiseContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+.choise{
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.loadingImage{
+    height: 40px;
+    width: 40px;   
+}
+
+.rightAnswer{
+    margin-left: 40px;
+    color: rgb(11, 129, 56);
+}
+
+.wrongAnswer{
+    margin-left: 40px;
+    color: rgb(194, 21, 21);
+}
+
+#imageGIF{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 20%;
+}
+
+@media screen and (max-width:970px){
+    .questionsContainer{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .sideBar{
+        margin-left: -200px;
+        transition: all 500ms linear;
+    }
+    .questionsHolder{
+        margin-left: 0;
+        text-align: center;
+    }
+    .sideBarSelector{
+        display: block;
+        float: left;
+        font-size: 25px;
+        margin-top: 18px;  
+        margin-left: 20px; 
+        cursor: pointer;
+    }
+    .navBar{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:650px){
+    .choiseContainer{
+        margin-top:0;
+        grid-template-columns: auto auto auto ;
+    }
+    
+}
